@@ -16,7 +16,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        jcenter()
+        maven { url=uri("https://maven.aliyun.com/repository/public") }
+
+
         maven { url = uri("https://jitpack.io" )}
     }
 }
@@ -24,3 +26,4 @@ dependencyResolutionManagement {
 rootProject.name = "Realm"
 include(":app")
 include(":realm")
+include(":mail")

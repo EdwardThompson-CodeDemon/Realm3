@@ -1,19 +1,22 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
 }
 
+group = "com.github.EdwardThompson-CodeDemon"
+version = "1.0.1"
 android {
     namespace = "com.realm"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.realm"
+//        applicationId = "com.realm"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+//        versionCode = 1
+//        versionName = "1.0"
+//
+  testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
