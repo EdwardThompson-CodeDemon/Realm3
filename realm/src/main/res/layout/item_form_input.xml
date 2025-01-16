@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <com.realm.utils.FormTools.SearchSpinner
+       android:layout_width="match_parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:id="@+id/selection_input"
+       android:layout_height="65dp"/>
+    
+    <com.realm.utils.FormTools.FormEdittext
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/selection_input"
+        android:id="@+id/text_input"
+        android:layout_height="65dp"/>
+
+
+  <com.realm.utils.FormTools.FingerprintCapture
+        android:layout_width="match_parent"
+
+        app:layout_constraintTop_toBottomOf="@id/text_input"
+        android:id="@+id/fingerprint_capture"
+        android:layout_height="wrap_content"/>
+
+<com.realm.utils.FormTools.ImageCapture
+        android:layout_width="match_parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/image_capture"
+        android:layout_height="wrap_content"/>
+
+<com.realm.utils.FormTools.SignatureCapture
+        android:layout_width="match_parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/signature_capture"
+        android:layout_height="wrap_content"/>
+
+
+<com.realm.utils.FormTools.MultiImageCapture
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/multi_image_capture"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

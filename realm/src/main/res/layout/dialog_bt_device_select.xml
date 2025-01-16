@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:elevation="12dp"
+        android:innerRadius="5dp"
+        android:shape="ring"
+        android:thicknessRatio="0.9"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/source_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="40dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="3dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_settings">
+
+                </ImageView>
+                <!--</androidx.cardview.widget.CardView>-->
+                <TextView
+                    android:id="@+id/device_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView2"
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:text="Time : "
+                    android:visibility="gone"
+                    android:textSize="12dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/device_status_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/device_status"
+
+                    android:layout_toRightOf="@+id/device_status"
+                    android:text=" "
+
+                    android:textSize="12dp"
+                    android:textStyle="italic" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/imageView2"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:id="@+id/title"
+                    android:text="Bt Config|Printer Selection"
+                    android:textSize="20dp"
+                    android:textColor="?attr/colorSecondary"
+                    android:textStyle="bold" />
+
+
+
+                <!--</androidx.cardview.widget.CardView>-->
+
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dhead"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/details"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:padding="3dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+
+
+                    <TextView
+                        android:id="@+id/value1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="initializing ..."
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/status_image"
+                        android:src="@drawable/ic_bluetooth_searching"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:padding="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp">
+
+
+
+
+                    <TextView
+                        android:id="@+id/current_device"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="Current device : unavailable"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/textback"
+                    android:padding="5dp"
+                    android:id="@+id/device_list"/>
+
+            </LinearLayout>
+            <Button
+                android:layout_margin="15dp"
+android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/details"
+                android:layout_centerHorizontal="true"
+                android:text="Close"
+                android:id="@+id/dismis"
+                android:background="@drawable/button_negative"
+                app:backgroundTint="@null"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorSecondary"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

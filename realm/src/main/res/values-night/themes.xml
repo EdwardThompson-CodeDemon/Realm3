@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Realm" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorOnSecondary">@color/idcapture_gold</item>
+        <item name="android:statusBarColor">#121212</item>
+        <item name="app_realmBackground">#181818</item>
+        <item name="realmSurfaceBackground">#404040</item>
+        <item name="realmStatusBarBackground">#121212</item>
+
+        <item name="colorSecondary">@color/idcapture_red</item>
+        <item name="itemFillColor">@color/gray</item>
+        <item name="colorSecondaryVariant">@color/idcapture_green</item>
+    </style>
+</resources>

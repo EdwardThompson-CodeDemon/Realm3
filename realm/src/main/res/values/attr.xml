@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="app_realmBackground" format="reference|color"/>
+    <attr name="realmSurfaceBackground" format="reference|color"/>
+    <attr name="realmStatusBarBackground" format="reference|color"/>
+
+
+    <attr name="title" format="string" />
+    <attr name="mandatory" format="boolean" />
+    <attr name="placeholder" format="string" />
+    <declare-styleable name="SearchSpinner">
+        <attr name="title"  />
+        <attr name="placeholder"/>
+        <attr name="mandatory"/>
+        <attr name="searchListTitle" format="string" />
+        <attr name="labelPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+<declare-styleable name="FormEdittext">
+        <attr name="title"/>
+        <attr name="placeholder" />
+    <attr name="mandatory"/>
+
+    </declare-styleable>
+</resources>

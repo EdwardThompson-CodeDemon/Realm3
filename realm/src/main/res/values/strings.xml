@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Realm</string>
+
+<!--    BACKUP-->
+    <string name="backup_title">Backup</string>
+    <string name="email_backup">Email backup</string>
+    <string name="sftp_backup">SFTP backup</string>
+    <string name="sd_card_backup">SD Card backup</string>
+    <string name="overal_backup_progress">Overall backup Progress</string>
+    <string name="initialize_backup">Initialize backup</string>
+    <string name="last_backup_time">Last backup time :</string>
+    <string name="backup">Backup</string>
+    <string name="info">Info</string>
+    <string name="home">Home</string>
+    <string name="staging_log_files">Staging Log files</string>
+    <string name="staging_current_database">Staging current database</string>
+    <string name="backup_location_ok">Backup location OK</string>
+    <string name="log_backup_ok">Log backup files OK</string>
+    <string name="log_file_ok">Log file OK</string>
+    <string name="db_backup_ok">Databases backup directory OK</string>
+    <string name="db_ok">Database OK</string>
+    <string name="log_files_ok">Log files OK</string>
+    <string name="trace_files_ok">Trace files OK</string>
+    <string name="today_at">Today at </string>
+    <string name="verifying_files_to_backup">Verifying files to archive</string>
+    <string name="creating_archive">Creating archive</string>
+    <string name="employee_data_files_ok">Employee data files location verrified</string>
+    <string name="archive_creation_complete">Archive creation complete</string>
+    <string name="initializing_backup">Initializing backup</string>
+    <string name="email_backup_begun">Email backup begun</string>
+    <string name="sftp_backup_begun">SFTP backup begun</string>
+    <string name="sd_card_backup_begun">SD card backup begun</string>
+    <string name="sd_card_not_available">SD Card not available</string>
+    <string name="sd_card_backup_failed">SD Card backup failed</string>
+    <string name="sd_card_backup_terminated">SD card backup terminated</string>
+    <string name="sd_card_backup_complete">SD card backup Complete</string>
+    <string name="backup_complete">Backup Complete</string>
+    <string name="missing_file">False/missing file detected :</string>
+    <string name="connected_to_sftp_server">Connected to SFTP server</string>
+    <string name="connection_failed">Connection failed</string>
+    <string name="attempting_sftp_reconnection">Attempting SFTP reconnection</string>
+    <string name="uploading_backup">Uploading backup</string>
+    <string name="sftp_upload_failed">SFTP file transfer failed :</string>
+    <string name="sftp_upload_successfull">SFTP upload successful</string>
+
+
+
+<!--    BLUETOOTH-->
+    <string name="ble_not_supported">BLE is not supported</string>
+
+<!--FINGERPRINT-->
+    <string name="usb_cable_connected_error">USB Interface has been occupied</string>
+    <string name="ACTION_USB_PERMISSION">com.famoco.morphodemo.USB_PERMISSION</string>
+    <string name="skiping_reason">Skiping reason</string>
+    <string name="select_reason_to_skip">Select the reason to skip below</string>
+    <string name="finerprint_missing">Not alL fingers have been captured \n Check :</string>
+    <string name="right_thumb">Right thumb </string>
+    <string name="right_index">Right index </string>
+    <string name="right_middle">Right middle</string>
+    <string name="right_ring">Right ring</string>
+    <string name="right_pinky">Right pinky</string>
+    <string name="left_thumb">Left thumb</string>
+    <string name="left_index">Left index</string>
+    <string name="left_middle">Left middle</string>
+    <string name="left_ring">Left ring</string>
+    <string name="left_pinky">Left pinky</string>
+
+
+<!--    SYNCHRONIZATION-->
+    <string name="authenticating">Authenticating ...</string>
+    <string name="authenticated">Authenticated ✔</string>
+    <string name="authentication_error">Authentication error !!!</string>
+    <string name="internet_connection_error">Internet connection error !!!</string>
+    <string name="last_sync_time">Last sync time :</string>
+    <string name="syncd_exception_codes">Synchronized Exception codes</string>
+    <string name="fetching_global_data">Fetching global data</string>
+    <string name="progress">progress :</string>
+    <string name="syncd_global_data">Synchronized Global data</string>
+    <string name="syncd_local_record">Synchronized local record</string>
+    <string name="today">Today</string>
+    <string name="status_prompt">Status :</string>
+    <string name="synchronizing">Synchronizing</string>
+    <string name="synchronization_complete">Synchronization complete</string>
+    <string name="synchronized_local">Synchronized local</string>
+    <string name="pending_data">,pending data :</string>
+
+    <string name="search">Search</string>
+    <string name="select_a">"Select a "</string>
+    <string name="select_an">"Select an "</string>
+
+
+
+</resources>
