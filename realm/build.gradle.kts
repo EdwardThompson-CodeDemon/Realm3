@@ -84,12 +84,6 @@ dependencies {
 //    }
 //}
 
-plugins {
-    alias(libs.plugins.android.application)
-    `maven-publish`
-}
-
-
 
 //afterEvaluate {
 //    publishing {
