@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.github.EdwardThompson-CodeDemon"
-version = "1.0.4"
+version = "1.0.5"
 android {
     namespace = "com.realm"
     compileSdk = 34
@@ -96,7 +96,7 @@ afterEvaluate {
         publications {
             create<MavenPublication>("Realm") {
                 from(components["release"])
-                artifactId = "Realm"
+//                artifactId = "Realm"
                 pom { packaging = "aar" }
             }
         }
