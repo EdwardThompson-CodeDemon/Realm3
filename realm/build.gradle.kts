@@ -1,9 +1,10 @@
 plugins {
     alias(libs.plugins.android.library)
+    id ("maven-publish")
 }
 
 group = "com.github.EdwardThompson-CodeDemon"
-version = "1.0.1"
+version = "1.0.4"
 android {
     namespace = "com.realm"
     compileSdk = 34
@@ -71,3 +72,17 @@ dependencies {
     implementation("com.github.shuhart:stepview:1.5.1")
 
 }
+configure<PublishingExtension> {
+    publications.create<MavenPublication>("Realm") {
+//        groupId = "com.github.EdwardThompson-CodeDemon"
+//        artifactId = "Realm"
+//        version = "1.0.4"
+//        pom.packaging = "jar"
+//        artifact("$buildDir/libs/MyPlugin.jar")
+
+    }
+//    repositories {
+//        mavenLocal()
+//    }
+}
+
