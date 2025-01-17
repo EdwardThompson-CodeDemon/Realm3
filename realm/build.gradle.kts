@@ -103,17 +103,17 @@ afterEvaluate {
     }
 }
 
-configure<PublishingExtension> {
-    publications.create<MavenPublication>("Realm") {
+//configure<PublishingExtension> {
+//    publications.create<MavenPublication>("Realm") {
 //        groupId = "com.github.EdwardThompson-CodeDemon"
 //        artifactId = "Realm"
 //        version = "1.0.4"
 //        pom.packaging = "jar"
 //        artifact("$buildDir/libs/MyPlugin.jar")
 
-    }
+//    }
 //    repositories {
 //        mavenLocal()
 //    }
-}
+//}
 
