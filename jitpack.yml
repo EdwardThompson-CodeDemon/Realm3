@@ -1,4 +1,8 @@
 jdk:
   -openjdk17
+install:
+  - FILE="-Dfile=realm-release.aar"
+  - mvn install:install-file $FILE -DgroupId=com.realm -DartifactId=realm -Dversion=1.0.11 -Dpackaging=aar -DgeneratePom=true
+
 
 
