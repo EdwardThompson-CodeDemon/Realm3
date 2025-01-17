@@ -105,7 +105,7 @@ configure<PublishingExtension> {
         artifactId = "realm"
         version = "1.0.8"
 //        pom.packaging = "aar"
-        artifact("$buildDir/outputs/aar/${project.name}-release.aar")
+//        artifact("$buildDir/outputs/aar/${project.name}-release.aar")
 //        artifact("$buildDir/libs/MyPlugin.jar")
 
     }
