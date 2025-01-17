@@ -2,13 +2,16 @@ plugins {
     alias(libs.plugins.android.library)
     id ("maven-publish")
 }
-
 group = "com.github.EdwardThompson-CodeDemon"
 version = "1.0.12"
 android {
     namespace = "com.realm"
     compileSdk = 34
-
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
     defaultConfig {
 //        applicationId = "com.realm"
         minSdk = 24
