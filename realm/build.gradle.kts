@@ -107,9 +107,9 @@ plugins {
 configure<PublishingExtension> {
     publications.create<MavenPublication>("Realm") {
 //        groupId = "com.github.EdwardThompson-CodeDemon"
-//        artifactId = "Realm"
+        artifactId = "Realm3"
 //        version = "1.0.4"
-        pom.packaging = "aar"
+//        pom.packaging = "aar"
 //        artifact("$buildDir/libs/MyPlugin.jar")
 
     }
