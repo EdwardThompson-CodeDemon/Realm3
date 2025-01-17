@@ -72,6 +72,37 @@ dependencies {
     implementation("com.github.shuhart:stepview:1.5.1")
 
 }
+
+
+//tasks.register("bundleReleaseAar") {
+//    doLast {
+//        val aarFile = file("$buildDir/outputs/aar/${project.name}-release.aar")
+//        copy {
+//            from(zipTree(aarFile))
+//            into("path/to/your/output/directory")
+//        }
+//    }
+//}
+
+plugins {
+    alias(libs.plugins.android.application)
+    `maven-publish`
+}
+
+
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("Realm") {
+                from(components["release"])
+                artifactId = "Realm"
+                pom { packaging = "aar" }
+            }
+        }
+    }
+}
+
 configure<PublishingExtension> {
     publications.create<MavenPublication>("Realm") {
 //        groupId = "com.github.EdwardThompson-CodeDemon"
