@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.github.EdwardThompson-CodeDemon"
-version = "1.0.6"
+version = "1.0.7"
 android {
     namespace = "com.realm"
     compileSdk = 34
