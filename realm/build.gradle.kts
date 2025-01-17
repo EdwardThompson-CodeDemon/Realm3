@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.github.EdwardThompson-CodeDemon"
-version = "1.0.8"
+version = "1.0.9"
 android {
     namespace = "com.realm"
     compileSdk = 34
@@ -103,7 +103,7 @@ configure<PublishingExtension> {
 //        groupId = "com.github.EdwardThompson-CodeDemon"
         groupId = "com.realm"
         artifactId = "realm"
-        version = "1.0.8"
+        version = "1.0.9"
 //        pom.packaging = "aar"
 //        artifact("$buildDir/outputs/aar/${project.name}-release.aar")
 //        artifact("$buildDir/libs/MyPlugin.jar")
