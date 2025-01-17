@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.github.EdwardThompson-CodeDemon"
-version = "1.0.5"
+version = "1.0.6"
 android {
     namespace = "com.realm"
     compileSdk = 34
@@ -91,29 +91,30 @@ plugins {
 
 
 
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("Realm") {
-                from(components["release"])
-//                artifactId = "Realm"
-                pom { packaging = "aar" }
-            }
-        }
-    }
-}
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            create<MavenPublication>("Realm") {
+//                from(components["release"])
+////                artifactId = "Realm"
+//                pom { packaging = "aar" }
+//            }
+//        }
+//    }
+//}
 
-//configure<PublishingExtension> {
-//    publications.create<MavenPublication>("Realm") {
+
+configure<PublishingExtension> {
+    publications.create<MavenPublication>("Realm") {
 //        groupId = "com.github.EdwardThompson-CodeDemon"
 //        artifactId = "Realm"
 //        version = "1.0.4"
-//        pom.packaging = "jar"
+        pom.packaging = "aar"
 //        artifact("$buildDir/libs/MyPlugin.jar")
 
-//    }
+    }
 //    repositories {
 //        mavenLocal()
 //    }
-//}
+}
 
