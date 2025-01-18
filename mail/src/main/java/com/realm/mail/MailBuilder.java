@@ -1,4 +1,4 @@
-package com.realm.utils.Mail;
+package com.realm.mail;
 
 import android.util.Log;
 

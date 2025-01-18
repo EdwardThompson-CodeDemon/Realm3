@@ -24,9 +24,12 @@ import com.realm.Realm;
 import com.realm.annotations.SyncDescription;
 import com.realm.annotations.sync_service_description;
 import com.realm.annotations.sync_status;
-import com.realm.utils.Mail.MailActionCallback;
-import com.realm.utils.Mail.MailData;
-import com.realm.utils.Mail.OVHMailBuilder;
+//import com.realm.utils.Mail.MailActionCallback;
+//import com.realm.utils.Mail.MailData;
+//import com.realm.utils.Mail.OVHMailBuilder;
+import com.realm.mail.MailActionCallback;
+import com.realm.mail.MailData;
+import com.realm.mail.OVHMailBuilder;
 import com.realm.utils.svars;
 
 import net.lingala.zip4j.ZipFile;
@@ -40,7 +43,6 @@ import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

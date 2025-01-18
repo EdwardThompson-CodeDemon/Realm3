@@ -1,4 +1,4 @@
-package com.realm.utils.Mail;
+package com.realm.mail;
 /**
  * Created by Edward Thompson on 19/01/2022.
  * @deprecated Gmail no longer supports insecure login behaviour

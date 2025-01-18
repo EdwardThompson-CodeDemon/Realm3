@@ -1,4 +1,4 @@
-package com.realm.utils.Mail;
+package com.realm.mail;
 
 import java.io.File;
 import java.util.ArrayList;
