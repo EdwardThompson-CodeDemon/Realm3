@@ -3,7 +3,7 @@ plugins {
     id("maven-publish")
 }
 group = "com.github.EdwardThompson-CodeDemon"
-version = "1.0.13"
+version = "1.0.14"
 android {
     namespace = "com.realm.mail"
     compileSdk = 34
@@ -52,7 +52,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.EdwardThompson-CodeDemon"
                 artifactId = "Realm3.mail"
-                version = "1.0.13"
+                version = "1.0.14"
 
             }
         }
