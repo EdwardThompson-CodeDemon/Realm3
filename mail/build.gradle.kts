@@ -3,7 +3,7 @@ plugins {
     id("maven-publish")
 }
 group = "com.github.EdwardThompson-CodeDemon"
-version = "1.0.14"
+version = "1.0.15"
 android {
     namespace = "com.realm.mail"
     compileSdk = 34
@@ -52,9 +52,20 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.EdwardThompson-CodeDemon"
                 artifactId = "Realm3.mail"
-                version = "1.0.14"
+                version = "1.0.15"
 
             }
         }
     }
 }
+
+configure<PublishingExtension> {
+    publications.create<MavenPublication>("Realm.mail") {
+        groupId = "com.realm.mail"
+        artifactId = "mail"
+        version = "1.0.15"
+
+    }
+
+}
+

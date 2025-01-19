@@ -3,7 +3,7 @@ plugins {
     id("maven-publish")
 }
 group = "com.github.EdwardThompson-CodeDemon"
-version = "1.0.14"
+version = "1.0.15"
 android {
     namespace = "com.realm"
     compileSdk = 34
@@ -40,7 +40,6 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation(files("libs\\activation.jar"))
     implementation(files("libs\\additionnal.jar"))
     implementation(files("libs\\androidprintsdk.jar"))
     implementation(files("libs\\btprintsdk.jar"))
@@ -49,7 +48,6 @@ dependencies {
     implementation(files("libs\\DecodeWlt.jar"))
     implementation(files("libs\\dpuareu.jar"))
     implementation(files("libs\\jsch-0.1.52.jar"))
-    implementation(files("libs\\mail.jar"))
     implementation(files("libs\\MorphoSmart_SDK_6.45.0.0.jar"))
     implementation(files("libs\\printersdk.jar"))
     implementation(files("libs\\TrustFinger_v2.1.0.1.jar"))
@@ -104,7 +102,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.EdwardThompson-CodeDemon"
                 artifactId = "Realm3"
-                version = "1.0.14"
+                version = "1.0.15"
 
                 // Use the layout property to specify the path to the AAR file
 //                artifact(layout.buildDirectory.file("outputs/aar/realm-release.aar"))
@@ -118,7 +116,7 @@ configure<PublishingExtension> {
 //        groupId = "com.github.EdwardThompson-CodeDemon"
         groupId = "com.realm"
         artifactId = "realm"
-        version = "1.0.14"
+        version = "1.0.15"
 //        pom.packaging = "aar"
 //        artifact(layout.buildDirectory.file("outputs/aar/${project.name}-release.aar"))
 //        artifact("$buildDir/outputs/aar/${project.name}-release.aar")
