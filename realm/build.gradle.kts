@@ -3,7 +3,7 @@ plugins {
     id("maven-publish")
 }
 group = "com.github.EdwardThompson-CodeDemon"
-version = "1.0.15"
+version = "1.0.16"
 android {
     namespace = "com.realm"
     compileSdk = 34
@@ -102,7 +102,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.EdwardThompson-CodeDemon"
                 artifactId = "Realm3"
-                version = "1.0.15"
+//                version = "1.0.15"
 
                 // Use the layout property to specify the path to the AAR file
 //                artifact(layout.buildDirectory.file("outputs/aar/realm-release.aar"))
@@ -110,21 +110,21 @@ afterEvaluate {
         }
     }
 }
-
-configure<PublishingExtension> {
-    publications.create<MavenPublication>("Realm") {
-//        groupId = "com.github.EdwardThompson-CodeDemon"
-        groupId = "com.realm"
-        artifactId = "realm"
-        version = "1.0.15"
-//        pom.packaging = "aar"
-//        artifact(layout.buildDirectory.file("outputs/aar/${project.name}-release.aar"))
-//        artifact("$buildDir/outputs/aar/${project.name}-release.aar")
-//        artifact("$buildDir/libs/MyPlugin.jar")
-
-    }
-//    repositories {
-//        mavenLocal()
+//
+//configure<PublishingExtension> {
+//    publications.create<MavenPublication>("Realm") {
+////        groupId = "com.github.EdwardThompson-CodeDemon"
+//        groupId = "com.realm"
+//        artifactId = "realm"
+//        version = "1.0.15"
+////        pom.packaging = "aar"
+////        artifact(layout.buildDirectory.file("outputs/aar/${project.name}-release.aar"))
+////        artifact("$buildDir/outputs/aar/${project.name}-release.aar")
+////        artifact("$buildDir/libs/MyPlugin.jar")
+//
 //    }
-}
+////    repositories {
+////        mavenLocal()
+////    }
+//}
 
