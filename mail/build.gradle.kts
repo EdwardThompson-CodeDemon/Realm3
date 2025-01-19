@@ -52,20 +52,20 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.EdwardThompson-CodeDemon"
                 artifactId = "Realm3.mail"
-                version = "1.0.15"
+//                version = "1.0.15"
 
             }
         }
     }
 }
 
-configure<PublishingExtension> {
-    publications.create<MavenPublication>("Realm.mail") {
-        groupId = "com.realm.mail"
-        artifactId = "mail"
-        version = "1.0.15"
-
-    }
-
-}
+//configure<PublishingExtension> {
+//    publications.create<MavenPublication>("Realm.mail") {
+//        groupId = "com.realm.mail"
+//        artifactId = "mail"
+//        version = "1.0.15"
+//
+//    }
+//
+//}
 
