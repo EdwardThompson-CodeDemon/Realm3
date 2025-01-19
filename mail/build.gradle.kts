@@ -3,7 +3,7 @@ plugins {
     id("maven-publish")
 }
 group = "com.github.EdwardThompson-CodeDemon"
-version = "1.0.15"
+version = "1.0.16"
 android {
     namespace = "com.realm.mail"
     compileSdk = 34
