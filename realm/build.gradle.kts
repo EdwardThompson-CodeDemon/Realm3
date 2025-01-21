@@ -2,8 +2,8 @@ plugins {
     alias(libs.plugins.android.library)
     id("maven-publish")
 }
-group = "com.github.EdwardThompson-CodeDemon"
-version = "1.0.16"
+//group = "com.github.EdwardThompson-CodeDemon"
+//version = "1.0.16"
 android {
     namespace = "com.realm"
     compileSdk = 34
@@ -72,44 +72,18 @@ dependencies {
 }
 
 
-//tasks.register("bundleReleaseAar") {
-//    doLast {
-//        val aarFile = file("$buildDir/outputs/aar/${project.name}-release.aar")
-//        copy {
-//            from(zipTree(aarFile))
-//            into("path/to/your/output/directory")
-//        }
-//    }
-//}
-
-
 //afterEvaluate {
 //    publishing {
 //        publications {
-//            create<MavenPublication>("Realm") {
+//            create<MavenPublication>("release") {
 //                from(components["release"])
-////                artifactId = "Realm"
-//                pom { packaging = "aar" }
+//                groupId = "com.github.EdwardThompson-CodeDemon"
+//                artifactId = "Realm3"
+//
 //            }
 //        }
 //    }
 //}
-
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("release") {
-                from(components["release"])
-                groupId = "com.github.EdwardThompson-CodeDemon"
-                artifactId = "Realm3"
-//                version = "1.0.15"
-
-                // Use the layout property to specify the path to the AAR file
-//                artifact(layout.buildDirectory.file("outputs/aar/realm-release.aar"))
-            }
-        }
-    }
-}
 //
 //configure<PublishingExtension> {
 //    publications.create<MavenPublication>("Realm") {

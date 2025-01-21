@@ -27,3 +27,4 @@ rootProject.name = "Realm"
 include(":app")
 include(":realm")
 include(":mail")
+include(":FingerprintManagement")
